@@ -1,16 +1,12 @@
 package web.domain.entity;
 
-import javax.persistence.*;
 
-@Entity
-@Table(name="car")
 public class Car {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Integer series;
-    @Column(name = "name")
+
     private String name;
-    @Column(name = "model")
+
     private String serial;
 
     public Car() {
